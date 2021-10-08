@@ -45,29 +45,42 @@ int main() {
 	//cout << "反置的数组为：" << re_arr << endl;
 
 	// 空间复杂度为1
-	int temp = 0;
-	float arr_len = sizeof(arr) / sizeof(arr[0]) - 1;
-	cout << "--------------" << arr_len << endl;
-	int loop_begin_index = 0;
-	int loop_endl_index = arr_len;
-	while(loop_begin_index < loop_endl_index) {
-		int tmp = arr[loop_endl_index];
-		arr[loop_endl_index] = arr[loop_begin_index];
-		arr[loop_begin_index] = tmp;
-		loop_begin_index++;
-		loop_endl_index--;
-	}
-	for (int i = 0; i < 5; i++) {
-		cout << arr[i];
-	}
+	//int temp = 0;/*
+	//float arr_len = sizeof(arr) / sizeof(arr[0]) - 1;
+	//cout << "--------------" << arr_len << endl;
+	//int loop_begin_index = 0;
+	//int loop_endl_index = arr_len;
+	//while(loop_begin_index < loop_endl_index) {
+	//	int tmp = arr[loop_endl_index];
+	//	arr[loop_endl_index] = arr[loop_begin_index];
+	//	arr[loop_begin_index] = tmp;
+	//	loop_begin_index++;
+	//	loop_endl_index--;
+	//}
+	//for (int i = 0; i < 5; i++) {
+	//	cout << arr[i];
+	//}*/
 
 	// 冒泡排序
-	int bubble_arr[5] = { 4,2,6,8,1 };
-	int arr_len = sizeof(bubble_arr) / sizeof(bubble_arr[0]) - 1;
+	// 相邻比较，然后交换，双层循环
+	int bubble_arr[5] = {4,2,6,8,1};
+	int arr_len = sizeof(bubble_arr) / sizeof(bubble_arr[0]);
+	cout << arr_len << endl;
 	for (int i = 0; i < arr_len; i++) {
-		int max_num = bubble_arr[0];
+		for (int j = 0; j < arr_len - i - 1; j++) {
+			if (bubble_arr[j] > bubble_arr[j + 1]) {
+				int temp = bubble_arr[j];
+				bubble_arr[j] = bubble_arr[j + 1];
+				bubble_arr[j + 1] = temp;
+			}
+		}
+	}
+	cout << "排序后的结果：";
+	for (int i = 0; i < arr_len; i++) {
+		cout << bubble_arr[i];
+		cout << " ";
 
 	}
-	
+
 	return 0;
 }
