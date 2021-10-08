@@ -61,8 +61,6 @@ int main() {
 		cout << arr[i];
 	}
 
-
-
 	// Ã°ÅİÅÅĞò
 	int bubble_arr[5] = { 4,2,6,8,1 };
 	int arr_len = sizeof(bubble_arr) / sizeof(bubble_arr[0]) - 1;
