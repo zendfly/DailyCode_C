@@ -142,6 +142,8 @@
     <ClCompile Include="ConsoleApplication.cpp" />
     <ClCompile Include="loop_code.cpp" />
     <ClCompile Include="multiplication_table.cpp" />
+    <ClCompile Include="二维数组.cpp" />
+    <ClCompile Include="函数.cpp" />
     <ClCompile Include="数组.cpp" />
     <ClCompile Include="程序流程结构.cpp" />
     <ClCompile Include="练习题.cpp" />

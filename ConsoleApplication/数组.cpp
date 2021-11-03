@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main() {
+int main2() {
 
 	// 数组：就是一个集合，里面存放了相同类型的数据元素
 	// 特点：1.相同的数据类型；2.由连续的内存位置组成
@@ -62,7 +62,7 @@ int main() {
 	//}*/
 
 	// 冒泡排序
-	// 相邻比较，然后交换，双层循环
+	// 总结：相邻比较，然后交换，双层循环
 	int bubble_arr[5] = {4,2,6,8,1};
 	int arr_len = sizeof(bubble_arr) / sizeof(bubble_arr[0]);
 	cout << arr_len << endl;
