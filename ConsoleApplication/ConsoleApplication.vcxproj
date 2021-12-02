@@ -149,10 +149,15 @@
     <ClCompile Include="函数份文件编写.cpp" />
     <ClCompile Include="函数的声明.cpp" />
     <ClCompile Include="指针.cpp" />
+    <ClCompile Include="指针冒泡排序.cpp" />
     <ClCompile Include="指针和数组.cpp" />
     <ClCompile Include="数组.cpp" />
     <ClCompile Include="程序流程结构.cpp" />
     <ClCompile Include="练习题.cpp" />
+    <ClCompile Include="结构体.cpp" />
+    <ClCompile Include="结构体中的C.cpp" />
+    <ClCompile Include="结构体作为参数进行函数传递.cpp" />
+    <ClCompile Include="结构体指针.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="swap.h" />
